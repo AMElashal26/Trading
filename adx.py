@@ -1,3 +1,10 @@
+/* 
+ADX Basics: ADX values range from 0 to 100. An ADX below 25 indicates a weak or non-existent trend, while an ADX above 25 suggests a strong trend. It does not indicate the direction of the trend.
+Components: ADX is derived from two other indicators: the plus directional index (+DI) and the minus directional index (-DI).
+Calculation: ADX can be calculated using high, low, and close prices over a specified period, typically 14 days.
+*/
+
+
 import talib
 import matplotlib.pyplot as plt
 
