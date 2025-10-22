@@ -1,8 +1,19 @@
 import talib
 import matplotlib.pyplot as plt
 
+# fetch Tesla data
+try:
+    import yfinance as yf
+except ImportError:
+    raise ImportError("yfinance is required. Install with: pip install yfinance")
+
+# change date range as needed
+stock_data = yf.download("TSLA", start="2020-01-01", end="2025-10-22", progress=False)
+
+
 # Calculate ADX
 stock_data['ADX'] = talib.ADX(stock_data['High'], stock_data['Low'], stock_data['Close'])
+
 
 # Create subplots
 fig, (ax1, ax2) = plt.subplots(2)
