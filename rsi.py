@@ -1,3 +1,13 @@
+/* RSI Interpretation:
+
+RSI > 70: Indicates an overbought market, suggesting the asset may be overvalued and the price could reverse.
+RSI < 30: Indicates an oversold market, suggesting the asset may be undervalued and the price could rally.
+RSI Calculation:
+
+Formula: ( RSI = 100 - \frac{100}{1 + RS} )
+RS (Relative Strength) is the average of upward price changes divided by the average of downward price changes over a chosen period. 
+*/
+
 # Calculate RSI with the default time period
 stock_data['RSI_14'] = talib.RSI(stock_data['Close'])
 
