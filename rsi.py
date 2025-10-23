@@ -1,4 +1,5 @@
-/* RSI Interpretation:
+/* 
+RSI Interpretation:
 
 RSI > 70: Indicates an overbought market, suggesting the asset may be overvalued and the price could reverse.
 RSI < 30: Indicates an oversold market, suggesting the asset may be undervalued and the price could rally.
