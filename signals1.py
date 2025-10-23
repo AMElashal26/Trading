@@ -13,3 +13,10 @@ bt_strategy = bt.Strategy('AboveSMA',
                           [bt.algos.SelectWhere(price_data > sma),
                            bt.algos.WeighEqually(),
                            bt.algos.Rebalance()])
+# Create the backtest and run it
+bt_backtest = bt.Backtest(bt_strategy, price_data)
+bt_result = bt.run(bt_backtest)
+
+# Plot the backtest result
+bt_result.plot(title='Backtest result')
+plt.show()
